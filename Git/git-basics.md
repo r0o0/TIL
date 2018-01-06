@@ -33,6 +33,8 @@ $ git commit -m "initial commit message"
 ```
 Will cover on 'git add .' later on.
 
+<br />
+
 To **clone** an existing repo:
 
 ```
@@ -41,25 +43,77 @@ $ git clone https://github.com/username/repository-name.git
 The above URL is your **remote origin** – it's where all files are originally downloaded from. <br />
 When you clone an existing repository, the '.git' folder already exists in the download of all files in the remote repo to your computer inside a new folder named with the exact same name as the repo.
 
+<br />
+
 The **3 states** in Git: <br />
 
-1. Commited <br />
-2. Modified <br />
-3. Staged <br />
+1. Modified – Git can track any files you edit in your working directory<br />
+2. Staged - Anything you stage becomes "ready to be commited"<br />
+3. Commited - Anything in the commited state is saved as a snapshot<br />
 
 To check for **status** of your project:
 
 ```
 git status
 ```
-Can check for any modified files
+When you type 'git status' command in the command-line: <br />
+
+- Untracked files - any new file that has never ever been added or commited is shown as `directory/filename.extension`
+- Any modified files are shown in red as `modified: directory/filename.extension` 
+- Any staged files are shown in green as `modified: directory/filename.extension`
+
+***Tip:***
+If you're not sure of any of the states above, just type `git status` and see what's going on. Check, and double-check just like checking pixels before handing off to developers is not a bad habit right?
+
+<br />
 
 To **stage** modified files:
 
-```
-git add . // to add all changes
-git add filename.extension // ta add specific change
-```
+- Stages *all and everything* in your *working directory*
+  ```
+  git add -A .
+  or
+  git add --all
+  ```
+
+- Stages *any new, modified, and deleted* file and subdirectory in *current directory*
+  ```
+  git add . 
+  ```
+
+- Stages *any new, modified file and directory* (excluding deleted ones)
+  ```
+  git add --ignore-removal .
+  ```
+
+- Stages *any modified and deleted file and directory* (excluding new ones)
+  ```
+  git add -u
+  or
+  git add -update
+  ```
+
+- Stages the changes made in *a file* for next commit.
+  ```
+  git add filename.extension
+  ```
+
+- Stages all changes made in *a directory* for next commit.
+  ```
+  git add directoryname
+  ```
+
+- Multiple stages at the same time
+  ```
+  git add filename filename directoryname/filename
+  ```
+
+- Stages all modified files with a specific extension in a specific directory
+  ```
+  git add directoryname/*.extension
+  ```
+
+<br />
 
 To **commit** staged changes:
 
@@ -73,8 +127,20 @@ There is a shortcut using `-m`:
 git commit -m "write commit message"
 ```
 
+<br />
 
+**About Git Branch**
 
+Git's default branch name is called `master`. Everytime you commit `master` branch points to the last commit.
+Ok I get it till here but what?? checkpoints? revision? a pointer? what exacly is branching? 
+
+<br />
+
+To **push** – transfer commits from your local repository to a remote repository:
+
+```
+git push origin branchname
+```
 
 
 
