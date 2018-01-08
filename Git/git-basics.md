@@ -142,5 +142,27 @@ To **push** – transfer commits from your local repository to a remote reposito
 git push origin branchname
 ```
 
+<br />
 
+**Ignoring files**
 
+There are files automatically created without you knowing. Since you didn't create these yourself, you don't want to commit them or even see them in the untracked list – temporary files, logs, cache files[...]<br /> *For example:* .DS_Store, .vscode[...]
+
+In another case, if your project contains personal configurations or passwords you'll want to ommit them in the commit as well.
+
+*A list of ignore rules for various projects and platforms:* <br /> https://github.com/github/gitignore
+
+**Method:** <br />
+
+1. Create a `.gitignore` file in your project root folder.
+2. I'm a Mac user, my first line will be `.DS_Store`.
+3. To add other files you want to ignore follow these most useful patterns:
+    * **One specific file**:  <br />
+    from the root folder
+    `path/to/file.extension`
+    * **All files with specific name**: <br />
+    `filename.extension`
+    * **All files of a specific type**: <br />
+    `*.extension`
+    * **All files in a specific folder**: <br />
+    `path/to/folder/*`
