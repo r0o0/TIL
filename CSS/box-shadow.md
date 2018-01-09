@@ -18,11 +18,11 @@ Hmm... I've seen this somewhere :)
 ![sketch shadows panel](./assets/images/sketch-shadow.jpg)
 
 I've been doing this everyday! The design says:  <br />
-  1. The horizontal offset is 0.
-  2. The vertical offset is 10px.
-  3. The blur radius is set to 16px.
-  4. There's no spread radius.
-  5. The shadow color is #000 (black) with an opacity set to 10%.
+  1. The **horizontal offset** is ***0***.
+  2. The **vertical offset** is ***10px***.
+  3. The **blur radius** is set to ***16px***.  
+  4. There's *no spread radius*.
+  5. The shadow **color** is ***#000*** (black) with an opacity set to ***10%*** .
 
 If you code this description it will be like this:
 
@@ -50,6 +50,10 @@ box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
 ```
 
 You just add inset in front and that's it!
+
+## Creative Box-Shadow
+
+argh.. time to sleep xxxx
 
 
 
