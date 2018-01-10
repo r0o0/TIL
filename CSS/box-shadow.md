@@ -39,6 +39,36 @@ If you code this description it will be like this:
 * For mozilla browsers, use `-moz-box-shadow`
 * For webkit browsers, use `-webkit-box-shadow`
 
+<br />
+
+**More about box-shadow:**
+
+* Accepts 2-6 values
+  ```css
+  .boxShadow-2values {
+    box-shadow: 10px 10px;
+  }
+  .boxShadow-4values {
+    box-shadow: 10px 10px 20px #ccc;
+  }
+  .boxShadow-6values {
+    box-shadow: inset 2px 2px 2px 2px #ccc;
+  }
+  ```
+* Multiple shadows
+  ```css
+  .multipleShadows {
+    box-shadow: 
+      10px 10px #ccc,
+      20px 20px 40px #aaa, 
+      40px 40px 80px, 
+      80px 0 40px, 
+      0 100px;
+  }
+  ```
+
+
+<br />
 
 ## The Inner Shadow
 
