@@ -10,9 +10,12 @@ Drop shadow effect can be represented with the box-shadow property in CSS.
 ```css
 .dropShadow {
   box-shadow: [horizontal offset] [vertical offset] 
-  [blur radius] [optional spread radius] [color];
+  [blur radius] [optional spread radius] [optional color];
 }
 ```
+
+***Note:*** Color value in the box-shadow property is also an option. If you don't give a color value the default value will be black(#000).
+
 Hmm... I've seen this somewhere :) 
 
 ![sketch shadows panel](./assets/images/sketch-shadow.jpg)
@@ -53,7 +56,7 @@ You just add inset in front and that's it!
 
 ## Creative Box-Shadow
 
-argh.. time to sleep xxxx
+
 
 
 
