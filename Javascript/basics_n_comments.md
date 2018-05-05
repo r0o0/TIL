@@ -28,7 +28,7 @@ Comments in Javascript behave like white space and are discarded during script e
 /* for multi-line comments
  * use this type of  comment syntax
  */
- /* but no /* double multi-line comment syntax though, */ it won't work */
+ /* but no /* double multi-line comment syntax though, */ it doesn't work */
 ```
 
 
