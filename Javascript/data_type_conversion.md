@@ -123,3 +123,43 @@ console.log(text2); // will return 200.345 typeof number
 <br>
 
 ### Converts to boolean
+
+As you can see below, _Javascript_ automatically converts __`0`, `-0`, `''`, `NaN`, `null` and `undefined`__ to a __Boolean__ value as __`false`__. <br>
+You can convert to a Boolean by using the __`Boolean()`__ object or __`!!`__.
+```Javascript
+0 == false; // true
+Boolean(0); // false
+Boolean(-0); // false
+Boolean(-1); // true
+Boolean(1); // true
+Boolean(NaN); // false
+Boolean(null); // false
+Boolean(undefined); // false
+Boolean(''); // false
+Boolean(' '); // true
+!!0; // false
+!!-0; // false
+!!''; // false
+!!NaN; // false
+!!null; // false
+!!undefined; // false
+```
+When a __function, array, and object__ are converted to a Boolean, these return a __Boolean__ value as __`true`__.
+
+### Null and Undefined
+Now let's see how _Javascript_ deals with __`null` and `undefined`__. 
+
+When you __multiply `null`__ to a number type value: <br>
+_Javascript_ will always return a number value of __`0`__
+```Javascript
+null * 890; // returns 0 typeof number
+```
+When __comparing values of `null` and `undefined`__: <br>
+_Javascript_ will return a boolean value of __`true`__.
+```Javascript
+console.log(null == undefined); // returns true typeof boolean
+```
+You can also __add a number value__ with __`null`__:
+```Javascript
+890 + null; // returns 890 typeof number
+```
