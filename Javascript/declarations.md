@@ -41,3 +41,14 @@ var _storage = 0;
 let $Test;
 const _store12 = 'i cannot be changed';
 ```
+
+3. _Javascript_ reserved keywords for use; the list is a bit long but to name a few:
+    - break
+    - case
+    - class
+    - debugger
+    - default
+    - and etc.
+Too long to memorize all these!! <br>
+
+If you used one of these reserved _Javasript_ keywords by any chance the console will let you know. A red line with a big __x__ will appear saying: __'Uncaught SyntaxError: Unexpected token [keyword].'__ So no worries :)
