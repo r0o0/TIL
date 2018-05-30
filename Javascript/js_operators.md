@@ -31,6 +31,7 @@ console.log(2 % 1);
 
 Not all _Javascript_ operators use symbols.
 - __`typeof`__ operator: check the data type of a value
+- __`!`__ NOT operator: see details below
 ```Javascript
 console.log(typeof 0.3);
 // will return number
@@ -48,7 +49,85 @@ To compare conditions, use __`<` 'is less than', `>` 'is greater than', `<=` 'le
 // compare numbers
 console.log(5 >= 5);
 // will return true
+
 // compare strings
 console.log('apple' < 'banana');
 // will return true
 ```
+When comparing strings, _Javascript_ checks the order of strings __from left to right__. The order goes on like this: <br> **_nonalphabetic characters_ < _Uppercase letters_ < _lowercase letters_**.
+```Javascript
+// how the order of strings works
+
+console.log("SHORT:!" < "long");
+// true
+console.log("short." < "lo:::ng;;;;;;");
+// false
+
+```
+
+__NaN__("not a number") value is the only value in _Javascript_ that __is not equal to itself__ because __NaN__ value is used to indicate a value of a mathematical calculation that make no sense (_nonsensical computation_). A result of a nonsensical computation can't be equal to another nonsensical computation result.
+```Javascript
+console.log(NaN == NaN)
+// will return false
+```
+
+<br>
+
+### Logical Operators 
+
+There are __3__ logical operators in _Javascript_: __logical AND `&&`, logical OR `||`, and logical NOT `!`__. These operators are used to __check wether multiple conditions are true__. 
+
+#### Logical AND `&&`
+
+The result is __true only if values given on both sides are true__.
+```Javascript
+console.log(true && false)
+// false
+console.log(true && true)
+// true
+```
+
+#### Logical OR `||`
+
+The result is __true if the value of either sides is true__.
+```Javascript
+console.log(true || false)
+// true
+console.log(false || false)
+// false
+```
+
+#### Logical NOT `!`
+This operator __changes__ a true value to produce as false and vice versa
+```Javascript
+console.log(!false)
+// true
+console.log(!true)
+// false
+```
+__Note:__ Logical operators can be used with Boolean values.
+
+
+### Conditional (Ternary) Operator
+
+It is the only operator with __3 values__ in _Javascript_. It is used as a short form of the `if` statement. To use a __conditional operator__: 
+
+#### Syntax
+
+```Javascript
+// conditional operator
+condition ? value1 : value2
+// condition checks whether it is true or false
+// if condition is true 
+// conditional operator returns value1
+// if condition is false 
+// conditional operator returns value2
+
+// example:
+console.log(true ? 1 : 2);
+// 1
+
+console.log(false ? 1 : 2);
+// 2
+```
+
