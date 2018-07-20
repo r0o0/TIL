@@ -72,7 +72,7 @@ Every component's __'props'__ has a property named __'children'__. __`this.props
 You can set a default information to a component's props a __`defaultProps`__ property to it's component.
 
 ```JS
-class Button extends React.Component {
+class ButtonShop extends React.Component {
   render() {
     return (
       <button>{this.props.text}</button>
@@ -81,6 +81,6 @@ class Button extends React.Component {
 }
 
 Button.defaultProps = {
-
+  text: 'Shop'
 }
 ```
