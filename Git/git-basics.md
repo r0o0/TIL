@@ -1,8 +1,8 @@
 # Git Basics
 
-## Git 
+## Git
 
-A one of many Version Control System (VCS). Git is a very useful tool to use for just about anything. It let's you know what's been changed, who changed, and why. And the best part of all is — When you changed the layout of a page a few days ago but changed to another one on the same file. Oops... I can't go back to that design but Git can make that happen. Magic! 
+A one of many Version Control System (VCS). Git is a very useful tool to use for just about anything. It let's you know what's been changed, who changed, and why. And the best part of all is — When you changed the layout of a page a few days ago but changed to another one on the same file. Oops... I can't go back to that design but Git can make that happen. Magic!
 
 ## Installing Git
 
@@ -13,19 +13,19 @@ https://git-scm.com/downloads
 
 **Basic commands** <br />
 
-To start a new repository in any existing folder on your computer — this will be your **working directory**: 
+To start a new repository in any existing folder on your computer — this will be your **working directory**:
 
 ```
 git init
 ```
-Creates a hidden `.git` folder — this is the Git repository skeleton, Git can track any changes I made in the working directory. To be specific, nothing is tracked yet. 
+Creates a hidden `.git` folder — this is the Git repository skeleton, Git can track any changes I made in the working directory. To be specific, nothing is tracked yet.
 
 If your working directory is not an empty directory: <br />
 
 *Need to track and do initial commit to the existing files in your working directory to trigger version-controlling.*
 
 ```
-$ git add . 
+$ git add .
 or
 $ git add filename.extension
 $ git add LICENSE //if you need one
@@ -59,7 +59,7 @@ git status
 When you type 'git status' command in the command-line: <br />
 
 - Untracked files - any new file that has never ever been added or commited is shown as `directory/filename.extension`
-- Any modified files are shown in red as `modified: directory/filename.extension` 
+- Any modified files are shown in red as `modified: directory/filename.extension`
 - Any staged files are shown in green as `modified: directory/filename.extension`
 
 ***Tip:***
@@ -78,7 +78,7 @@ To **stage** modified files:
 
 - Stages *any new, modified, and deleted* file and subdirectory in *current directory*
   ```
-  git add . 
+  git add .
   ```
 
 - Stages *any new, modified file and directory* (excluding deleted ones)
@@ -118,7 +118,7 @@ To **stage** modified files:
 To **commit** staged changes:
 
 ```
-git commit 
+git commit
 ```
 A default command-line text editor will open – write **commit message**.
 
@@ -132,14 +132,14 @@ git commit -m "write commit message"
 **About Git Branch**
 
 Git's default branch name is called `master`. Everytime you commit `master` branch points to the last commit.
-Ok I get it till here but what?? checkpoints? revision? a pointer? what exacly is branching? 
+Ok I get it till here but what?? checkpoints? revision? a pointer? what exacly is branching?
 
 <br />
 
 To **push** – transfer commits from your local repository to a remote repository:
 
 ```
-git push origin branchname
+git push origin [branchname]
 ```
 
 <br />
@@ -166,3 +166,4 @@ In another case, if your project contains personal configurations or passwords y
     `*.extension`
     * **All files in a specific folder**: <br />
     `path/to/folder/*`
+
