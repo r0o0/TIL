@@ -22,6 +22,7 @@ nav li {
 
 __The Sass way__
 
+#### Scss
 ```scss
 nav {
   ul {
@@ -35,21 +36,42 @@ nav {
   }
 }
 ```
+#### Sass
+```scss
+nav 
+  ul 
+    width: 100%
+    font-size: 14px
+    li 
+      width: 100%
+      height: 40px
+      background-color: #ccc
+```
 
 ## `&` in Sass
 
 The __`&` ampersand__ in Sass is used to refer the element's parent.
 
+#### Scss
 ```scss
 a {
   color: blue;
   &:hover {
     color: red;
   }
-  $:visited {
+  &:visited {
     color: purple;
   }
 }
+```
+#### Sass
+```scss
+a
+  color: blue
+  &:hover
+    color: red
+  &:visited
+    color: purple
 ```
 __Note:__ Useful when used with __pseudo selectors__
 
@@ -57,6 +79,7 @@ __Note:__ Useful when used with __pseudo selectors__
 
 In Sass properties can be nested!
 
+#### Scss
 ```scss
 .title {
   font: {
@@ -65,6 +88,14 @@ In Sass properties can be nested!
     weight: bold;
   }
 }
+```
+#### Sass
+```scss
+.title
+  font:
+    family: sans-serif
+    size: 18px
+    weight: bold
 ```
 
 __The above code when turned into css:__
