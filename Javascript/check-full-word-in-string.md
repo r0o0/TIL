@@ -1,4 +1,4 @@
-# Checking For Full Words In A Stirng
+# Checking For Full Words In A String
 
 Using regex expressions:
 
