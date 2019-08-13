@@ -20,7 +20,7 @@ sudo mkdir -p /data/db
 
 ### 4. Make sure the `/data/db` directory has the right permissions
 ```
-sudo chown -R `id-un` /data/db
+sudo chown -R `id -un` /data/db
 
 > Enter password: //local pwd
 ```
