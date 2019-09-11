@@ -1,6 +1,10 @@
 # `input[type="file"]`
 
-```html
+Check [DEMO](https://codepen.io/uvoro/pen/bXMbwo)
+
+## Markup
+
+```HTML
 <input
   type="file"
   id="input-file"
@@ -13,6 +17,8 @@
   Upload Photo
 </label>
 ```
+
+## Javascript
 
 ```JS
 // handles changes in input[type="file"]
@@ -40,5 +46,3 @@ const readFile = (uploadedFile) => {
 };
 
 ```
-
-Check [DEMO](https://codepen.io/uvoro/pen/bXMbwo)
