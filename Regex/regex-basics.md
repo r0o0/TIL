@@ -33,7 +33,7 @@ Two ways to create a Regex in Javascript:
 
 ## `test()` method
 
-The most basic method check a regex pattern in a string. It`s a Regex method `RegExp.prototype.test()` that returns a boolean value.
+The most basic method check a regex pattern in a string. It's a Regex method `RegExp.prototype.test()` that returns a boolean value.
 ```JS
 const message = 'Hello, world!';
 const message2 = 'world!';
