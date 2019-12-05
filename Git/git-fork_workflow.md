@@ -31,3 +31,18 @@
   ```
 
 Now repeat steps 4-7
+
+# Using the fetch method
+
+1. Fork repository you want to work on
+2. Clone forked repository
+3. Add remote url
+`git remote add <name> <url>`
+3. Fetch remote branches
+`git fetch --all`
+4. Create feature branch locally
+`git checkout -b <branch-name> --no-track upstream/develop`
+Note: --no-track upstream/develop -- means to not track the feature branch in upstream/develop
+Tip: To check tracking branches run __`git branch -vv`__
+5. git push
+Note: A message will appear to set upstream origin. Complete the setting then use `git push` afterwards.
