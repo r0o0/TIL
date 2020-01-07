@@ -1,5 +1,9 @@
 # Console
 
+Helpful console methods
+
+__HTML document__
+
 ```HTML
 <body>
   <h1 class="title">Hello World</h1>
@@ -14,9 +18,6 @@
   console.log(element); // html
   console.dir(element); // properties
 ```
-
-## `console.error`
-
 
 ## `console.table`
 

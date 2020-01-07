@@ -20,3 +20,10 @@ vue ui
 ```
 This command will open a new page in your browser where you can create a vue project. I prefer the create command...
 
+## Use vue-cli without installing
+
+Installing current version without permanently installing vue-cli.
+
+```
+npx @vue/cli create appname
+```

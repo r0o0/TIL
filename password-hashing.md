@@ -50,3 +50,4 @@ hash(userPwd).then(hashed => {
 
 // store hashedPwd
 ```
+https://webbjocke.com/javascript-web-encryption-and-hashing-with-the-crypto-api/
