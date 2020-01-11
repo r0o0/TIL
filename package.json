@@ -1,0 +1,19 @@
+{
+  "name": "TIL",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:r0o0/TIL.git",
+  "author": "r0o0 <rayeoh7@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "vuepress": "^1.2.0"
+  },
+  "scripts": {
+    "docs": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress-plugin-demo-block": "^0.7.2",
+    "vuepress-plugin-demo-code": "^0.5.0"
+  }
+}
