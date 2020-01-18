@@ -5,11 +5,6 @@ console.log('', sidebar);
 const title = 'TIL';
 const port = 9090;
 
-const demoCodeConfig = {
-  minHeight: 800,
-  onlineBtns: { codepen: false, jsfiddle: false, codesandbox: false },
-};
-
 module.exports = () => ({
   dest: 'docs/dist',
   title,
@@ -21,10 +16,15 @@ module.exports = () => ({
     nav: [{ text: 'Github', link: 'https://github.com/r0o0/TIL' }]
   },
   plugins: [
-    [ 'demo-code', {
+    ['demo-code', {
       minHeight: 500,
       onlineBtns: { codepen: false, jsfiddle: false, codesandbox: false },
       styleStr: 'text-decoration: underline; background-color: yellow',
+    }],
+    ['vuepress-plugin-clean-urls', {
+      normalSuffix: '/',
+      indexSuffix: '/',
+      notFoundPath: '/404.html'
     }]
   ]
 });
