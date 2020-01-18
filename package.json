@@ -6,7 +6,8 @@
   "author": "r0o0 <rayeoh7@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "vuepress": "^1.2.0"
+    "vuepress": "^1.2.0",
+    "vuepress-plugin-clean-urls": "^1.1.1"
   },
   "scripts": {
     "docs": "vuepress dev docs",
