@@ -1,6 +1,6 @@
 <template>
     <i class="icon">
-      <img :src="`/icons/icon-${progLang}.svg`" :alt="{progLang}" />
+      <img :src="`/icons/icon-${iconSuffix}.svg`" :alt="`icon ${iconSuffix}`" />
     </i>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
   name: 'Icon',
   props: {
-    progLang: String,
+    iconSuffix: String,
   },
 }
 </script>
