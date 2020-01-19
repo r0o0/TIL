@@ -8,19 +8,17 @@ next: false
 
 # `input[type="file"]`
 
-Check [DEMO](https://codepen.io/uvoro/pen/bXMbwo)
-
-## Demo
+## Demo <Button icon="codepen" type="link" link="https://codepen.io/uvoro/pen/bXMbwo" style="width: 28px; height: 28px; margin-left: 10px;" />
 
 ::: demo JS
 <html>
-  <div class="demo-frame">
+  <div class="demo-code-block">
     <input
       type="file"
       id="input-file"
       name="input-file"
       accept="image/*"
-      onchange={handleChange}
+      onchange={handleFileChange}
       hidden
     />
     <label class="btn-upload" for="input-file" role="button">
@@ -29,8 +27,9 @@ Check [DEMO](https://codepen.io/uvoro/pen/bXMbwo)
   </div>
 </html>
 <script>
+(() => {
 // handles changes in input[type="file"]
-const handleChange = () => {
+const handleFileChange = () => {
   const fileUploader = document.querySelector('#input-file');
   const getFile = fileUploader.files
   if (getFile.length !== 0) {
@@ -51,12 +50,9 @@ const readFile = (uploadedFile) => {
     reader.readAsDataURL(uploadedFile);
   }
 };
+})();
 </script>
 <style>
-  .demo-frame {
-    padding: 20px;
-    border: 1px solid #e7e7e7;
-  }
   .btn-upload {
     padding: 5px 10px;
     background-color: #eaeaea;
@@ -64,3 +60,7 @@ const readFile = (uploadedFile) => {
   }
 </style>
 :::
+
+#### Related Links
+- [MDN - input type="file"](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file)
+- [MDN - FileReader](https://developer.mozilla.org/en-US/docs/Web/API/FileReader)
