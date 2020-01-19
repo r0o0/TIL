@@ -4,7 +4,7 @@ lang: en-US
 next: false
 ---
 
-<Icon progLang="js" />
+<Icon iconSuffix="js" />
 
 # `input[type="file"]`
 

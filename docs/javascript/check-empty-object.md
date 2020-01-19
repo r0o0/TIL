@@ -5,7 +5,7 @@ prev: false
 next: false
 ---
 
-<Icon progLang="js" />
+<Icon iconSuffix="js" />
 
 # Check Empty Object
 
