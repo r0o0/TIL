@@ -19,7 +19,7 @@ module.exports = () => ({
     ['demo-code', {
       minHeight: 500,
       onlineBtns: { codepen: false, jsfiddle: false, codesandbox: false },
-      styleStr: 'text-decoration: underline; background-color: yellow',
+      styleStr: 'font-size: 14px;',
     }],
     ['vuepress-plugin-clean-urls', {
       normalSuffix: '/',
