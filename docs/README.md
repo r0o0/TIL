@@ -1,3 +1,8 @@
-# Intro
+# r0o0
 
-Learning a new thing is a great pleasure :)
+Anything related to programming.
+
+<recent-posts />
+
+
+
