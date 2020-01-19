@@ -4,6 +4,8 @@ lang: en-US
 next: false
 ---
 
+<Icon progLang="js" />
+
 # `input[type="file"]`
 
 Check [DEMO](https://codepen.io/uvoro/pen/bXMbwo)
