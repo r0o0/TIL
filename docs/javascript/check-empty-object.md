@@ -1,4 +1,13 @@
-# Check empty Object
+---
+title: Check Empty Object
+lang: en-US
+prev: false
+next: false
+---
+
+<Icon progLang="js" />
+
+# Check Empty Object
 
 Various methods to check for empty Object.
 
