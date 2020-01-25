@@ -19,10 +19,8 @@ module.exports = () => ({
     nav: [{ text: 'Github', link: 'https://github.com/r0o0/TIL' }]
   },
   plugins: [
-    ['demo-code', {
-      minHeight: 500,
+  ['demo-code', {
       onlineBtns: { codepen: false, jsfiddle: false, codesandbox: false },
-      styleStr: 'font-size: 14px;',
     }],
     ['vuepress-plugin-clean-urls', {
       normalSuffix: '/',
