@@ -10,7 +10,7 @@ next: false
 
 ## Demo <Button icon="codepen" type="link" link="https://codepen.io/uvoro/pen/bXMbwo" style="width: 28px; height: 28px; margin-left: 10px;" />
 
-::: demo JS
+::: demo js
 <html>
   <div class="demo-code-block">
     <input
