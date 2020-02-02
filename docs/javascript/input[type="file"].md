@@ -1,6 +1,7 @@
 ---
 title: input[type="file"]
 lang: en-US
+prev: false
 next: false
 ---
 
@@ -11,6 +12,7 @@ next: false
 ## Demo <Button icon="codepen" type="link" link="https://codepen.io/uvoro/pen/bXMbwo" style="width: 28px; height: 28px; margin-left: 10px;" />
 
 ::: demo js
+
 <html>
   <div class="demo-code-block">
     <input
@@ -61,6 +63,4 @@ const readFile = (uploadedFile) => {
 </style>
 :::
 
-#### Related Links
-- [MDN - input type="file"](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file)
-- [MDN - FileReader](https://developer.mozilla.org/en-US/docs/Web/API/FileReader)
+<related-links :links="[{ title: 'Input type file', url: 'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file', site: 'MDN' }, { title: 'FileReader', url: 'https://developer.mozilla.org/en-US/docs/Web/API/FileReader', site: 'MDN' }]" />

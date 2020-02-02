@@ -12,8 +12,12 @@
     white-space : pre-wrap;
   }
 
-  .theme-default-content:not(.custom) > h1:first-child + p {
-    margin-top: 0;
+  .theme-default-content:not(.custom) {
+    min-height: calc(100vh - 128px);
+
+    & > h1:first-child + p {
+      margin-top: 1px;
+    }
   }
 
   @media (max-width: 719px) {
