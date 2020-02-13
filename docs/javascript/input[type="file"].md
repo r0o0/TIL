@@ -5,7 +5,7 @@ prev: false
 next: false
 ---
 
-<Icon iconSuffix="js" />
+<Icon name="javascript" />
 
 # `input[type="file"]`
 

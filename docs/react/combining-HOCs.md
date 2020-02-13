@@ -5,7 +5,7 @@ prev: false
 next: false
 ---
 
-<Icon iconSuffix="react" />
+<Icon name="react" />
 
 # Combining multiple HOCs
 

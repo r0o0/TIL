@@ -1,6 +1,6 @@
 <template>
-    <i class="icon">
-      <img :src="`/icons/icon-${iconSuffix}.svg`" :alt="`icon ${iconSuffix}`" />
+    <i class="icon" :aria-hidden="ariaHidden" :style="customStyle">
+      <img :src="`/icons/icon-${name}.svg`" :alt="`icon ${name}`" />
     </i>
 </template>
 
@@ -8,7 +8,9 @@
 export default {
   name: 'Icon',
   props: {
-    iconSuffix: String,
+    name: String,
+    ariaHidden: Boolean,
+    customStyle: Object,
   },
 }
 </script>
