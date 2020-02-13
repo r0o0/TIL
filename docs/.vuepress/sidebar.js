@@ -3,11 +3,14 @@ const javascript = require('../javascript/ToC');
 const react = require('../react/ToC');
 
 const sidebar = {
-  '/javascript/': [ getToC(javascript, 'Javascript') ],
+  '/javascript/': [
+    '../home',
+    getToC(javascript, 'Javascript'),
+  ],
   '/': [
     '/',
     {
-      title: 'Table of Contents',
+      title: '',
       collapsable: false,
       children: [
         getToC(javascript, 'Javascript', 'javascript/'),
