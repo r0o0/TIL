@@ -7,10 +7,14 @@ const sidebar = {
     '../home',
     getToC(javascript, 'Javascript'),
   ],
+  '/react/': [
+    '../home',
+    getToC(react, 'React'),
+  ],
   '/': [
     '/',
     {
-      title: '',
+      title: 'Table Of Contents',
       collapsable: false,
       children: [
         getToC(javascript, 'Javascript', 'javascript/'),
