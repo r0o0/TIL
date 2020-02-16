@@ -11,9 +11,11 @@ next: false
 
 An example using Redux `connect` and Material-ui `withStyles`.
 
-__Example:__
+**Example:**
 
-Install '__recompose__': `yarn add recompose`
+Install '**recompose**':
+
+<Terminal :commands="['yarn add recompose']" />
 
 ```JS
 import { compose } from 'recompose';
@@ -21,14 +23,15 @@ import { compose } from 'recompose';
 // ...some codes
 
 export default compose(
-    withStyles(styles, {
-        name: 'App',
-    }),
-    connect(),
+  withStyles(styles, {
+    name: 'App',
+  }),
+  connect(),
 )(AppFrame);
 ```
 
 or
+
 ```JS
 export default withStyles(styles)(connect(mapStateToProps)(App));
 ```
