@@ -5,10 +5,10 @@
     target="_blank"
     :href="link"
   >
-    <Icon :iconSuffix="icon" style="width: inherit; height: inherit" />
+    <Icon :name="icon" style="width: inherit; height: inherit" />
   </a>
   <button v-else>
-    <Icon :iconSuffix="icon" />
+    <Icon :name="icon" />
   </button>
 </template>
 
