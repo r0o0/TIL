@@ -7,6 +7,7 @@ const description = "r0o0's Programming blog";
 const port = 9090;
 
 module.exports = () => ({
+	base: '/TIL/',
 	dest: 'docs/dist',
 	title,
 	description,
