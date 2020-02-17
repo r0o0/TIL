@@ -11,11 +11,14 @@ next: false
 
 An example using Redux `connect` and Material-ui `withStyles`.
 
-**Example:**
+## Install
 
-Install '**recompose**':
+Install **recompose**:
 
 <Terminal :commands="['yarn add recompose']" />
+
+
+## How to use
 
 ```JS
 import { compose } from 'recompose';
