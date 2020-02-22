@@ -1,6 +1,6 @@
 <template>
     <i class="icon" :aria-hidden="ariaHidden" :style="customStyle">
-      <img :src="`/icons/icon-${name}.svg`" :alt="`icon ${name}`" />
+      <img :src="$withBase(`/icons/icon-${name}.svg`)" :alt="`icon ${name}`" />
     </i>
 </template>
 

@@ -5,7 +5,7 @@
       <li class="related-links__item" v-for="link in links">
         <a :href="link.url" target="_blank">
           {{ link.title }}
-          <span class="related-links__item-site">({{ link.site }})</span>
+          <span class="related-links__item-site">({{ link.site }}) <Icon class  ="related-links__icon-link" name="link" /></span>
         </a>
       </li>
     </ul>
@@ -13,8 +13,10 @@
 </template>
 
 <script>
+import Icon from './Icon';
   export default {
     name: 'related-links',
+    components: { Icon },
     props: {
       links: Array
     }
@@ -63,15 +65,6 @@
         align-items: center;
         cursor: pointer;
 
-        &::after {
-          content: '';
-          width: 14px;
-          height: 14px;
-          margin-left: 4px;
-          mask: url('/icons/icon-link.svg') no-repeat;
-          background-color: #a09c9c;
-        }
-
         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
           &::after {
             background-color: transparent;
@@ -82,10 +75,18 @@
       }
 
       &-site {
+        display: flex;
+        align-items: center;
         padding-left: 2px;
         font-size: 12px;
         color: hsl(0, 2%, 62%);
       }
+    }
+    &__icon-link {
+      padding-left: 6px;
+      width: 20px;
+      height: 20px;
+      fill: #ccc;  // change to filter
     }
 
     &__item:not(last-child) {
