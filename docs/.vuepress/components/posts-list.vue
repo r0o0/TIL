@@ -8,13 +8,13 @@
 						:name="progLang.title.toLowerCase()"
 						:ariaHidden="true"
 						:customStyle="{ width: '22px', height: '22px', marginRight: '8px' }"
-					/>  
+					/>
 					{{ progLang.title }}
 				</h3>
 				<ul class="prog-lang-content__list">
 					<li class="prog-lang-content__item prog-lang-content-item" v-for="content in progLangContent(progLang.title)">
 						<div class="prog-lang-content-item__title-group">
-							<a :href="content.path">
+							<a :href="$withBase(content.path)">
 								<h4 class="prog-lang-content-item__title">
 									{{ content.title }}
 								</h4>
